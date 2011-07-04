@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Modelagem Orientada a Documentos com JavaScript</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script> 
+    <link href="stylesheets/screen.css" type="text/css" rel="stylesheet" media="Screen,projection" />
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery.presentation.js"></script>
+    <script type="text/javascript" src="scripts/jquery.lwtCountdown-1.0.js"></script>
+    <script type="text/javascript" src="scripts/global.js"></script>
+    <script type="text/javascript">
+        function set_by_offset() {
+            $('#countdown_dashboard').stopCountDown();
+            $('#countdown_dashboard').setCountDown({
+                 targetOffset: {
+                   'day':0,
+                   'month': 0,
+                   'year': 0,
+                   'hour': 0,
+                   'min':  5,
+                   'sec':  0
+                }
+            });
+            $('#countdown_dashboard').startCountDown();
+        }
+
+        jQuery(document).ready(function() {
+                $('#countdown_dashboard').hide();
+                $('#pergunta').click(function() {
+                    $('#countdown_dashboard').slideDown();
+                    setTimetout(set_by_offset(), 1000);
+                });
+        });
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <h1>Modelagem Orientada a Documentos com JavaScript</h1>
+      </div>
+    </div>
+
+
+    <div id="content">
+      <div id="slides">
+        <div class="slide">
+            <h2>Problema</h2>
+            <br><br><br><br><br>
+            <ul>
+                <li>Como realizar referência entre documentos?</li>
+                <li>Como implementar isso no meu sistema?</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>Não-solução</h2>
+            <br><br><br><br><br>
+            <center><h3>Modelar com a cabeça no relacional</h3></center>
+        </div>
+
+        <div class="slide">
+            <h2>Solução</h2>
+            <br><br><br><br><br>
+            <center><h3>Observando o comportamento no mundo real</h3></center>
+        </div>
+
+        <div class="slide">
+            <h2>Proposta</h2>
+            <br><br><br><br><br>
+            <center><h3>Grampear</h3></center>
+        </div>
+
+        <div class="slide">
+            <h2>Proposta</h2>
+            <br><br><br><br><br>
+            <center><h3>Copiar e... grampear!</h3></center>
+        </div>
+
+        <div class="slide">
+            <h2>Integridade Programática</h2>
+            <br><br><br><br><br>
+            <h3>Tão simples como trabalhar com ponteiros</h3>
+        </div>
+
+        <div class="slide">
+            <h2>Integridade Programática</h2>
+            <br><br><br><br><br>
+            <h3><b>Notícia ruim:</b> você deve garantir a integridade</h3>
+        </div>
+
+        <div class="slide">
+            <br><br><br><br><br>
+            <h3 id='pergunta'>Perguntas?</h3>
+                <div id="countdown_dashboard">
+                    <div class="dash minutes_dash">
+                        <span class="dash_title">minutos</span>
+                        <div class="digit"><div class="top" style="display: none; ">0</div><div class="bottom" style="display: block; ">0</div></div>
+                        <div class="digit"><div class="top" style="display: none; ">0</div><div class="bottom" style="display: block; ">0</div></div>
+                    </div>
+            
+                    <div class="dash seconds_dash">
+                        <span class="dash_title">segundos</span>
+                        <div class="digit"><div class="top" style="display: none; ">0</div><div class="bottom" style="display: block; ">0</div></div>
+                        <div class="digit"><div class="top" style="display: none; ">0</div><div class="bottom" style="display: block; ">0</div></div>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            Leonardo Eloy - http://github.com/leonardoeloy
+        </div>
+    </div>
+  </body>
+</html>

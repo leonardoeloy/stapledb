@@ -1,0 +1,20 @@
+{
+  "name": "cururu",
+  "description": "Document-oriented Database",
+  "version": "0.2.0",
+
+  "author": "Leonardo Eloy <leonardo.eloy@gmail.com>",
+
+  "dependencies": {
+    "coffee-script": ">= 1.0.1",
+    "vows": ">= 0.5.8"
+  },
+
+  "engine": ["node >= 0.4.2"],
+
+  "main": "./lib/cururu",
+
+  "scripts": {
+    "install": "cake build"
+  }
+}
