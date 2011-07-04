@@ -1,5 +1,5 @@
 {
-  "name": "cururu",
+  "name": "stapledb",
   "description": "Document-oriented Database",
   "version": "0.2.0",
 
@@ -12,7 +12,7 @@
 
   "engine": ["node >= 0.4.2"],
 
-  "main": "./lib/cururu",
+  "main": "./lib/stapledb",
 
   "scripts": {
     "install": "cake build"

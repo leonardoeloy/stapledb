@@ -1,9 +1,10 @@
-cururu: a javascript document-oriented database
-===============================================
+StapleDB: a Javascript Document-oriented Database
+=================================================
+
+TODO: Rewrite readme.
 
 This module is an experimental implementation of a document-oriented database written in CoffeeScript. 
 
-TODO: Rewrite readme.
 
 Introduction
 ------------

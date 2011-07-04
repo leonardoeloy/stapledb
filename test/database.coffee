@@ -2,7 +2,7 @@ vows = require 'vows'
 assert = require 'assert'
 sys = require 'sys'
 puts = console.log
-db = require '../lib/cururu'
+db = require '../lib/stapledb'
 
 ###
    Since this is just a proof of concept library, these tests go in the database array directly
