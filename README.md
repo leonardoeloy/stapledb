@@ -64,7 +64,7 @@ The difference between stapling original documents from their copies is that upd
 Copy
 ----
 
-The copy concept is very similiar to staple. The only difference is that updates in the copy won't reflect in changes in the original revision. 
+The copy concept is very similar  to staple. The only difference is that updates in the copy won't reflect in changes in the original revision. 
 Thus, the copy is a part of the document that it's being stapled to. 
 
 Taking the above mentioned example:
